@@ -2,6 +2,7 @@ from typing import Dict, Any
 from enum import Enum
 from uvicorn.config import logger
 
+
 class BaseConfig:
     config_type = "base"
     debug: bool = False,

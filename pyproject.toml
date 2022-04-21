@@ -8,6 +8,7 @@ authors = ["StepanTchynetskyiDS <stepan.tchynetskyi@deepsee.ai>"]
 python = "3.10.4"
 fastapi = "^0.75.2"
 uvicorn = "^0.17.6"
+flake8 = "^4.0.1"
 
 [tool.poetry.dev-dependencies]
 
