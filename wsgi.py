@@ -7,8 +7,8 @@ app = create_app()
 
 @app.get("/")
 async def get_a():
-    logger.info("aaaaaaaaaaaaaaaaaaaaa")
-    return {"A": "a"}
+    logger.info("aaaaaaaaaaaaaaaaaaaaabbbcDadwaf")
+    return {"A": "a", "B": "b"}
 
 
 if __name__ == "__main__":
