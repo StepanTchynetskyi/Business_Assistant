@@ -14,5 +14,4 @@ class User(db.Base):
     password = Column(String)
     name = Column(String)
     last_name = Column(String)
-    to_delete = Column(String)
     is_active = Column(Boolean, default=True)

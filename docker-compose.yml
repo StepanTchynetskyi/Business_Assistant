@@ -5,8 +5,6 @@ services:
     build: .
     restart: always
     working_dir: /app
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     ports:
       - "8000:8000"
     env_file:

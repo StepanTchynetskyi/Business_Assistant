@@ -16,4 +16,4 @@ RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-
 
 COPY . ./
 
-CMD poetry run alembic upgrade head && poetry run python wsgi.py
+CMD poetry install && poetry run alembic upgrade head && poetry run python wsgi.py
