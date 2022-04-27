@@ -2,7 +2,9 @@ version: '3'
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: api.Dockerfile
     restart: always
     working_dir: /app
     ports:
@@ -13,6 +15,19 @@ services:
       - ".:/app"
     depends_on:
       - db
+  client:
+    build:
+      context: .
+      dockerfile: react.Dockerfile
+    restart: always
+    working_dir: /client
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./src/Business_Assistant_Client/:/client"
+    depends_on:
+      - db
+      - app
   db:
     image: postgres:14.2-alpine
     restart: always
@@ -27,3 +42,4 @@ services:
 volumes:
   app:
   db:
+  client:
