@@ -1,0 +1,3 @@
+[submodule "Business_Assistant_Client"]
+	path = Business_Assistant_Client
+	url = https://github.com/StepanTchynetskyi/Business_Assistant_Client
